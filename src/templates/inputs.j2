@@ -1,0 +1,6 @@
+{% for i in inputs %}
+[{{ i.name }}]
+{% for k,v in i.items() if k != 'name' %}
+{{ k }} = {{ v }}
+{% endfor %}
+{% endfor %}

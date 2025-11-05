@@ -1,0 +1,6 @@
+{% for role in roles %}
+[role_{{ role.name }}]
+{% for k,v in role.items() if k != 'name' %}
+{{ k }} = {{ v }}
+{% endfor %}
+{% endfor %}

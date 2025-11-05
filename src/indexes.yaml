@@ -1,0 +1,12 @@
+indexes:
+  - name: os_logs
+    homePath: $SPLUNK_DB/os_logs/db
+    coldPath: $SPLUNK_DB/os_logs/colddb
+    thawedPath: $SPLUNK_DB/os_logs/thaweddb
+    datatype: event
+    maxDataSize: auto_high_volume
+
+  - name: app_metrics
+    homePath: $SPLUNK_DB/app_metrics/db
+    datatype: metric
+    frozenTimePeriodInSecs: 31536000

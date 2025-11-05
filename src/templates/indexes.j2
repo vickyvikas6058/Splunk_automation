@@ -1,0 +1,6 @@
+{% for idx in indexes %}
+[{{ idx.name }}]
+{% for k,v in idx.items() if k != 'name' %}
+{{ k }} = {{ v }}
+{% endfor %}
+{% endfor %}

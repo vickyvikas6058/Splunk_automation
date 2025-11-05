@@ -1,0 +1,9 @@
+inputs:
+  - name: "udp://514"
+    index: os_logs
+    sourcetype: syslog
+    disabled: 0
+  - name: "monitor:///var/log/app"
+    index: app_metrics
+    sourcetype: log4j
+    disabled: 0

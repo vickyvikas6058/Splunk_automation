@@ -1,0 +1,11 @@
+roles:
+  - name: admin
+    srchJobsQuota: 100
+    srchDiskQuota: 50000
+    srchMaxTime: 0
+    imported_roles: [user]
+  - name: power
+    srchJobsQuota: 50
+    srchDiskQuota: 20000
+    srchMaxTime: 600
+    imported_roles: [user]
