@@ -9,3 +9,7 @@ roles:
     srchDiskQuota: 20000
     srchMaxTime: 600
     imported_roles: [user]
+  - name: vikas
+    srchJobsQuota: 10
+    srchDiskQuota: 5000
+    srchMaxTime: 300
